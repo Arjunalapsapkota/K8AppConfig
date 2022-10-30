@@ -16,14 +16,3 @@ spec:
       containers:
         - name: webapp
           image: arjunalapsapkota/webapp:latest
----
-apiVersion: v1
-kind: Pod
-metadata:
-  name: queue
-  labels:
-    app: queue
-spec:
-  containers:
-    - name: queue
-      image: richardchesterwood/k8s-fleetman-queue:release1
